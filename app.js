@@ -12,7 +12,6 @@ mongoose.connect(process.env.url_db)
 .catch((error)=>{
     console.log("no funciona ya valio", error )
 })
-
 const app=express();
 app.use(cors());
 app.listen(4000, ()=>{
