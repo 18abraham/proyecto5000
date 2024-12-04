@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import dotenv from "dotenv"
 import mongoose from "mongoose";
-import {test} from "./backend/controllers/alumno.controller.js";
+import {test} from "./backend/controller/equipos.controller.js";
 
 dotenv.config()
 mongoose.connect(process.env.url_db)
@@ -10,12 +10,13 @@ mongoose.connect(process.env.url_db)
     console.log("funciona")
 })
 .catch((error)=>{
-    console.log("no funciona ya valio", error )
+    console.log("no jala nadotototototta", error )
 })
+
 const app=express();
 app.use(cors());
 app.listen(4000, ()=>{
-    console.log("se escucha el servidor")
+    console.log("se escucha la baina")
 })
 
 test()
